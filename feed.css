@@ -1,0 +1,181 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Ensure no scrolling on body level */
+}
+
+/* Main feedback container styling */
+.feedback-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px; /* Reduced padding */
+  max-width: 600px; /* Maximum width */
+  width: 100%; /* Ensure it fills the width */
+  max-height: 70vh; /* Reduced max height */
+  background-color: #f9f9f9; /* Light background */
+  border: 1px solid #ddd; /* Optional border */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Vertical scrolling if content overflows */
+}
+
+/* Title styling */
+h2 {
+  font-size: 18px; /* Smaller font size */
+  margin-bottom: 12px; /* Smaller margin */
+  color: #333;
+  text-align: center; /* Centered title */
+}
+
+/* Form group styling */
+.feedback-form .form-group {
+  margin-bottom: 16px; /* Reduced space between form elements */
+}
+
+/* Label styling */
+.feedback-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Rating options styling */
+.rating-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Smaller gap */
+}
+
+.rating-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Smaller gap */
+}
+
+.rating-item input[type="radio"] {
+  display: none;
+}
+
+.rating-item label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Smaller size for rating icons */
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size */
+  color: #555;
+  transition: all 0.3s;
+}
+
+.rating-item input[type="radio"]:checked + label {
+  background-color: #4f46e5;
+  color: #fff;
+  border-color: #4f46e5;
+}
+
+/* Rating span */
+.rating-item span {
+  font-size: 12px; /* Smaller font size */
+  color: #555;
+}
+
+/* Textarea styling */
+textarea {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  font-size: 14px;
+  max-height: 150px; /* Limit textarea height */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 4px rgba(79, 70, 229, 0.3);
+}
+
+/* Form actions button styling */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Cancel and submit button styling */
+.cancel-btn,
+.submit-btn {
+  padding: 8px 16px; /* Smaller button padding */
+  border-radius: 8px;
+  font-size: 12px; /* Smaller font size */
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+.cancel-btn {
+  background: none;
+  color: #888;
+}
+
+.cancel-btn:hover {
+  color: #555;
+}
+
+.submit-btn {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background: #4338ca;
+}
+
+/* Scrollable container custom styling */
+.feedback-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.feedback-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.feedback-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.feedback-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Adjusting the wrapper to make the container centered and flexible */
+.feedback-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top */
+  height: auto;
+  overflow: auto;
+}
